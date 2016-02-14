@@ -11,6 +11,8 @@
 
 #include <stdio.h>
 
+#include "Global/QConfig.h"
+
 // DesignPatterns  设计模式
 #include "DesignPattern/QSingleton.h"
 
@@ -25,5 +27,6 @@
 // Managers 管理器
 #include "Managers/QSoundMgr.h"
 #include "Managers/QResMgr.hpp"
+#include "Managers/QDataMgr.hpp"
 
 #endif /* QFramework_hpp */

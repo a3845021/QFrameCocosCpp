@@ -10,5 +10,7 @@
 
 static void QPrint(const char * pattern,...)
 {
-
+#if DEBUG 
+    printf(pattern,...);
+#endif
 }
