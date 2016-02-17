@@ -26,7 +26,10 @@ namespace QFramework {
     {
     private:
         SimpleAudioEngine *m_pCachedAudioEngine;
-    
+        
+        bool m_bMusicOn;
+        bool m_bSoundOn;
+        
     public:
         QSoundMgr();
         virtual ~QSoundMgr();
@@ -37,6 +40,17 @@ namespace QFramework {
         void PauseMusic();
         void ResumeAllSounds();
         void ResumeMusic();
+        
+        void setMusicVolume(float volume);
+        void setSoundVolume(float volume);
+        
+        void musicOn();
+        void musicOff();
+        void soundOn();
+        void soundOff();
+        
+        bool isMusicOn();
+        bool isSoundOn();
     // implement from IMgr
     public:
         virtual void InitMgr();
