@@ -49,6 +49,9 @@ namespace QFramework {
         void soundOn();
         void soundOff();
         
+        void PreloadSound(const char *path);
+        void PreloadMusic(const char *path);
+        
         bool isMusicOn();
         bool isSoundOn();
     // implement from IMgr

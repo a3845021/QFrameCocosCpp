@@ -11,7 +11,11 @@
 
 #include <stdio.h>
 
+// 配置
 #include "Global/QConfig.h"
+
+// 日志
+#include "Util/QPrint.h"
 
 // DesignPatterns  设计模式
 #include "DesignPattern/QSingleton.h"
@@ -28,5 +32,7 @@
 #include "Managers/QSoundMgr.h"
 #include "Managers/QResMgr.hpp"
 #include "Managers/QDataMgr.hpp"
+#include "Managers/QImageMgr.h"
+
 
 #endif /* QFramework_hpp */

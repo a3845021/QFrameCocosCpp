@@ -39,35 +39,51 @@ void QSoundMgr::PlaySound(const char *filePath)
     m_pCachedAudioEngine->playEffect(filePath);
 }
 
+// 暂停所有声音
 void QSoundMgr::PauseAllSounds()
 {
     m_pCachedAudioEngine->pauseAllEffects();
 }
 
+// 暂停音乐
 void QSoundMgr::PauseMusic()
 {
     m_pCachedAudioEngine->pauseBackgroundMusic();
 }
 
+// 恢复所有声音
 void QSoundMgr::ResumeAllSounds()
 {
     m_pCachedAudioEngine->resumeAllEffects();
 }
 
+// 恢复音乐
 void QSoundMgr::ResumeMusic()
 {
     m_pCachedAudioEngine->resumeBackgroundMusic();
 }
 
 
+// 设置音量
 void QSoundMgr::setMusicVolume(float volume)
 {
     m_pCachedAudioEngine->setBackgroundMusicVolume(volume);
 }
 
+// 设置声音音量
 void QSoundMgr::setSoundVolume(float volume)
 {
     m_pCachedAudioEngine->setEffectsVolume(volume);
+}
+
+void QSoundMgr::PreloadSound(const char *path)
+{
+    m_pCachedAudioEngine->preloadEffect(path);
+}
+
+void QSoundMgr::PreloadMusic(const char * path)
+{
+    m_pCachedAudioEngine->preloadBackgroundMusic(path);
 }
 
 void QSoundMgr::musicOff()
