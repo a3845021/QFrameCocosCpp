@@ -11,14 +11,13 @@
 
 #include <stdio.h>
 
-static void QPrint(const char * pattern,...)
+#define DEBUG 1
+
+static void QPrint(const char * printContent)
 {
-#ifndef DEBUG
-    va_list ap;
-    va_start(ap, pattern);
-    
+#ifdef DEBUG
     printf("********");
-    printf(pattern,ap);
+    printf("%s",printContent);
     printf("********\n");
 #endif
 }

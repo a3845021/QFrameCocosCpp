@@ -10,11 +10,11 @@
 #define IMessage_h
 
 namespace QFramework {
-    class IMessage
+    class IMsg
     {
     public:
-        IMessage();
-        virtual ~IMessage();
+        IMsg();
+        virtual ~IIMsg();
     };
 }
 

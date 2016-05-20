@@ -6,7 +6,7 @@
 //
 //
 
-#include "QPrint.hpp"
+#include "QPrint.h"
 
 static void QPrint(const char * pattern,...)
 {
