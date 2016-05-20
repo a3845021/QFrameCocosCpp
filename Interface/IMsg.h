@@ -14,7 +14,7 @@ namespace QFramework {
     {
     public:
         IMsg();
-        virtual ~IIMsg();
+        virtual ~IMsg();
     };
 }
 

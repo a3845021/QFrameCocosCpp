@@ -20,7 +20,7 @@ namespace QFramework {
     class QDataMgr: public QSingleton<QDataMgr>,virtual public IMgr
     {
     private:
-        UserDefault *m_pCachedUserDefault = nullptr;
+        CCUserDefault *m_pCachedUserDefault = nullptr;
     public:
         QDataMgr();
         virtual ~QDataMgr();

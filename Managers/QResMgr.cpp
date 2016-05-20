@@ -24,7 +24,7 @@ QResMgr::~QResMgr()
 
 void QResMgr::InitMgr()
 {
-    m_CachedFileUtils = FileUtils::getInstance();
+    m_CachedFileUtils = CCFileUtils::sharedFileUtils();
 }
 
 

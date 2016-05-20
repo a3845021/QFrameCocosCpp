@@ -22,6 +22,6 @@ QImageMgr::~QImageMgr()
 
 void QImageMgr::InitMgr()
 {
-    m_pCachedTextureMgr = Director::getInstance()->getTextureCache();
+    m_pCachedTextureMgr = CCTextureCache::sharedTextureCache();
 }
 

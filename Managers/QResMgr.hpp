@@ -18,7 +18,7 @@ namespace QFramework {
     class QResMgr : public QSingleton<QResMgr> ,virtual public IMgr
     {
     private:
-        FileUtils *m_CachedFileUtils;
+        CCFileUtils *m_CachedFileUtils;
     public:
         QResMgr();
         virtual ~QResMgr();

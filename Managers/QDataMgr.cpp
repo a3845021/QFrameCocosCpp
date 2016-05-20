@@ -18,7 +18,7 @@ QDataMgr::QDataMgr()
 
 void QDataMgr::InitMgr()
 {
-    m_pCachedUserDefault = UserDefault::getInstance();
+    m_pCachedUserDefault = CCUserDefault::sharedUserDefault();
 }
 
 QDataMgr::~QDataMgr()

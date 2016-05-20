@@ -20,7 +20,7 @@ namespace QFramework {
     class QImageMgr : public QSingleton<QImageMgr>,virtual public IMgr
     {
     private:
-        TextureCache *m_pCachedTextureMgr;
+        CCTextureCache *m_pCachedTextureMgr;
     public:
         QImageMgr();
         virtual ~QImageMgr();

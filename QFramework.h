@@ -24,7 +24,7 @@
 #include "Interface/IView.h"
 #include "Interface/IModel.h"
 #include "Interface/ICommand.h"
-#include "Interface/IMessage.h"
+#include "Interface/IMsg.h"
 #include "Interface/ICtrl.h"
 #include "Interface/IMgr.h"
 

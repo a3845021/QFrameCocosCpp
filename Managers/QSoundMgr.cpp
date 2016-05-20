@@ -24,13 +24,13 @@ QSoundMgr::~QSoundMgr()
 // 初始化数据
 void QSoundMgr::InitMgr()
 {
-    m_pCachedAudioEngine = SimpleAudioEngine::getInstance();
+    m_pCachedAudioEngine = SimpleAudioEngine::sharedEngine();
 }
 
 // 播放音乐
 void QSoundMgr::PlayMusic(const char *filePath, bool loop)
 {
-    SimpleAudioEngine::getInstance()->playBackgroundMusic(filePath,loop);
+    SimpleAudioEngine::sharedEngine()->playBackgroundMusic(filePath,loop);
 }
 
 // 播放音乐
