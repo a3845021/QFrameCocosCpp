@@ -7,6 +7,7 @@
 //
 
 #include "QImageMgr.h"
+#include "../Util/QPrint.h"
 
 using namespace QFramework;
 
@@ -23,5 +24,13 @@ QImageMgr::~QImageMgr()
 void QImageMgr::InitMgr()
 {
     m_pCachedTextureMgr = CCTextureCache::sharedTextureCache();
+}
+
+
+void QImageMgr::Description()
+{
+    QPrint("LogoScene::cleanup", CCTextureCache::sharedTextureCache()->description());
+    
+    CCTextureCache::sharedTextureCache()->dumpCachedTextureInfo();
 }
 

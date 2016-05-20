@@ -25,6 +25,9 @@ namespace QFramework {
         QImageMgr();
         virtual ~QImageMgr();
         virtual void InitMgr();
+        
+        
+        void Description();
     };
 }
 #endif /* QImageMgr_hpp */

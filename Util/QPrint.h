@@ -11,14 +11,10 @@
 
 #include <stdio.h>
 
-#define DEBUG 1
-
-static void QPrint(const char * printContent)
+static void QPrint(const char *actionName, const char * content)
 {
 #ifdef DEBUG
-    printf("********");
-    printf("%s",printContent);
-    printf("********\n");
+    printf("%s @@@@@ %s\n",actionName,content);
 #endif
 }
 #endif /* QPrint_hpp */
