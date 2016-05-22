@@ -19,6 +19,7 @@ USING_NS_CC;
 namespace QFramework {
     class QImageMgr : public QSingleton<QImageMgr>,virtual public IMgr
     {
+
     private:
         CCTextureCache *m_pCachedTextureMgr;
     public:
